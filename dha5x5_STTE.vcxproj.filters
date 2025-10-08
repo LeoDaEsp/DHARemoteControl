@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="BrtBuilderDlg.cpp" />
+    <ClCompile Include="BrtDlg.cpp" />
+    <ClCompile Include="BrtFbkCalibDlg.cpp" />
+    <ClCompile Include="BtlFile.cpp" />
+    <ClCompile Include="CnfFile.cpp" />
+    <ClCompile Include="ComDlg.cpp" />
+    <ClCompile Include="dha5x5_STTE.cpp" />
+    <ClCompile Include="dha5x5_STTEDlg.cpp" />
+    <ClCompile Include="DhaStteDevice.cpp" />
+    <ClCompile Include="EditIpDlg.cpp" />
+    <ClCompile Include="EnhMaintDlg.cpp" />
+    <ClCompile Include="FMT_DIB.cpp" />
+    <ClCompile Include="FMT_TraceCtrl.cpp" />
+    <ClCompile Include="FMT_Wnd.cpp" />
+    <ClCompile Include="GenerateBrtDlg.cpp" />
+    <ClCompile Include="LoaderDlg.cpp" />
+    <ClCompile Include="MaintDlg.cpp" />
+    <ClCompile Include="MaintMpp.cpp" />
+    <ClCompile Include="MMDlg.cpp" />
+    <ClCompile Include="SelectUnitDlg.cpp" />
+    <ClCompile Include="SmartListCtrl.cpp" />
+    <ClCompile Include="SmartStatic.cpp" />
+    <ClCompile Include="StatusListCtrl.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="StteConfigDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BrtBuilderDlg.h" />
+    <ClInclude Include="BrtDlg.h" />
+    <ClInclude Include="BrtFbkCalibDlg.h" />
+    <ClInclude Include="BtlFile.h" />
+    <ClInclude Include="CnfFile.h" />
+    <ClInclude Include="ComDlg.h" />
+    <ClInclude Include="dha5x5_STTE.h" />
+    <ClInclude Include="dha5x5_STTEDlg.h" />
+    <ClInclude Include="DhaStteDevice.h" />
+    <ClInclude Include="EditIpDlg.h" />
+    <ClInclude Include="EnhMaintDlg.h" />
+    <ClInclude Include="FMT_DIB.h" />
+    <ClInclude Include="FMT_TraceCtrl.h" />
+    <ClInclude Include="FMT_Wnd.h" />
+    <ClInclude Include="GenerateBrtDlg.h" />
+    <ClInclude Include="LoaderDlg.h" />
+    <ClInclude Include="MaintDlg.h" />
+    <ClInclude Include="MaintMpp.h" />
+    <ClInclude Include="MMDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SelectUnitDlg.h" />
+    <ClInclude Include="SmartListCtrl.h" />
+    <ClInclude Include="SmartStatic.h" />
+    <ClInclude Include="StatusListCtrl.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="StteConfigDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dha5x5_STTE.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\dha5x5_STTE.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="res\dha5x5_STTE.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="RemotePanel">
+      <UniqueIdentifier>{cfcac820-4e06-4526-a427-836a5aa16bcc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

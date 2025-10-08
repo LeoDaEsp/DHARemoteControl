@@ -1,0 +1,44 @@
+﻿  cl : warning della riga di comando D9035 : l'opzione 'Gm' è deprecata e verrà rimossa in una futura versione
+  StdAfx.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  cl : warning della riga di comando D9035 : l'opzione 'Gm' è deprecata e verrà rimossa in una futura versione
+  StteConfigDlg.cpp
+  StatusListCtrl.cpp
+  SmartStatic.cpp
+  SmartListCtrl.cpp
+  SelectUnitDlg.cpp
+  MMDlg.cpp
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\MMDlg.cpp(1611,35): warning C4018: '<': errata corrispondenza tra signed e unsigned
+  MaintMpp.cpp
+  MaintDlg.cpp
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\MaintDlg.cpp(213,28): warning C4244: 'argomento': conversione da 'DWORD' a 'BYTE'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\MaintDlg.cpp(229,28): warning C4244: 'argomento': conversione da 'DWORD' a 'BYTE'. Possibile perdita di dati.
+  LoaderDlg.cpp
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\LoaderDlg.cpp(1397,9): warning C4101: 'dwRet': variabile locale senza riferimenti
+  GenerateBrtDlg.cpp
+  FMT_Wnd.cpp
+  FMT_TraceCtrl.cpp
+  FMT_DIB.cpp
+  EnhMaintDlg.cpp
+  EditIpDlg.cpp
+  DhaStteDevice.cpp
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\DhaStteDevice.cpp(1667,26): warning C4305: '=': troncamento da 'int' a 'BYTE'
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\DhaStteDevice.cpp(1667,23): warning C4309: '=': troncamento di valore costante
+  dha5x5_STTEDlg.cpp
+  dha5x5_STTE.cpp
+  ComDlg.cpp
+  CnfFile.cpp
+  Generazione del codice in corso...
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\DhaStteDevice.cpp(1768): warning C4715: 'CDhaStteDevice::EnableLog': non tutti i percorsi di controllo restituiscono un valore
+  Compilazione in corso...
+  BtlFile.cpp
+  BrtFbkCalibDlg.cpp
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\BrtFbkCalibDlg.cpp(282,75): warning C4244: '=': conversione da 't_FMT_Uint64' a 'DWORD'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\BrtFbkCalibDlg.cpp(283,75): warning C4244: '=': conversione da 't_FMT_Uint64' a 'DWORD'. Possibile perdita di dati.
+  BrtDlg.cpp
+  BrtBuilderDlg.cpp
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\BrtBuilderDlg.cpp(411,47): warning C4244: 'argomento': conversione da 'DWORD' a 'BYTE'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\BrtBuilderDlg.cpp(418,45): warning C4244: 'argomento': conversione da 'DWORD' a 'BYTE'. Possibile perdita di dati.
+  Generazione del codice in corso...
+BrtBuilderDlg.obj : warning LNK4075: '/EDITANDCONTINUE' ignorato a causa della specifica di '/SAFESEH'
+  dha5x5_STTE.vcxproj -> C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\Debug\dha5x5_STTE.exe

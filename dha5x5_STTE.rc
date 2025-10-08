@@ -1,0 +1,739 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MM_DLG DIALOGEX 0, 0, 492, 316
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Memory Manager"
+MENU IDR_MENU_MM
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_GRAPH,"SysTabControl32",0x0,7,7,478,227
+    PUSHBUTTON      "Program",IDC_BUT_PROG,7,293,56,16
+    PUSHBUTTON      "Verify",IDC_BUT_VERIFY,67,293,56,16
+    CONTROL         "",IDC_PROG_STATUS,"msctls_progress32",WS_BORDER,215,273,270,12
+    CTEXT           "",IDC_STATIC_STATUS,35,272,170,14,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Status:",IDC_STATIC,7,275,24,8
+    PUSHBUTTON      "Poll",IDC_BUT_POLL,198,293,56,16
+    LTEXT           "FAN Off Current Theshold:",IDC_STATIC,10,246,87,8
+    EDITTEXT        IDC_EDIT_CURROFFFAN,102,245,41,13,ES_AUTOHSCROLL
+    RTEXT           "FAN On Current Low Theshold:",IDC_STATIC,181,246,106,8
+    EDITTEXT        IDC_EDIT_CURRONFAN_LO,289,245,41,13,ES_AUTOHSCROLL
+    RTEXT           "FAN On Current Low Theshold:",IDC_STATIC,336,246,106,8
+    EDITTEXT        IDC_EDIT_CURRONFAN_HI,444,244,41,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Read",IDC_BUT_READ,128,293,56,16
+    COMBOBOX        IDC_COMBO_SPEED,363,294,80,106,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "SPI Speed:",IDC_STATIC,323,296,36,8
+END
+
+IDD_BRT_DLG DIALOGEX 10, 20, 456, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "0x00000003",IDC_TRACE,"FMT_TraceCtrl",WS_GROUP | WS_TABSTOP,7,7,315,165,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_LIST_NODES,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,331,7,118,124
+    LTEXT           "Step:",IDC_STATIC,332,141,18,8
+    EDITTEXT        IDC_EDIT_NODE,352,139,33,14,ES_AUTOHSCROLL
+    LTEXT           "Value:",IDC_STATIC,391,141,21,8
+    EDITTEXT        IDC_EDIT_VALUE,414,139,33,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Insert",IDC_BUT_INSERT,334,158,50,15
+    PUSHBUTTON      "Remove",IDC_BUT_REMOVE,391,158,50,15
+END
+
+IDD_MAINT_DLG DIALOGEX 0, 0, 201, 316
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Maintenance"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_ANALOGS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,116,164,155
+    LTEXT           "PWM #1:",IDC_STATIC,14,25,31,8
+    EDITTEXT        IDC_EDIT_PWM1,48,23,35,13,ES_AUTOHSCROLL
+    LTEXT           "PWM #2:",IDC_STATIC,14,42,31,8
+    EDITTEXT        IDC_EDIT_PWM2,48,40,35,13,ES_AUTOHSCROLL
+    LTEXT           "PWM #3:",IDC_STATIC,14,60,31,8
+    EDITTEXT        IDC_EDIT_PWM3,48,58,35,13,ES_AUTOHSCROLL
+    LTEXT           "PWM #4:",IDC_STATIC,14,77,31,8
+    EDITTEXT        IDC_EDIT_PWM4,48,75,35,13,ES_AUTOHSCROLL
+    LTEXT           "VDC #1:",IDC_STATIC,109,25,28,8
+    EDITTEXT        IDC_EDIT_VDC1,140,23,35,13,ES_AUTOHSCROLL
+    LTEXT           "VDC #2:",IDC_STATIC,109,42,28,8
+    EDITTEXT        IDC_EDIT_VDC2,140,40,35,13,ES_AUTOHSCROLL
+    LTEXT           "VDC #3:",IDC_STATIC,109,60,28,8
+    EDITTEXT        IDC_EDIT_VDC3,140,58,35,13,ES_AUTOHSCROLL
+    LTEXT           "VDC #4:",IDC_STATIC,109,77,28,8
+    EDITTEXT        IDC_EDIT_VDC4,140,75,35,13,ES_AUTOHSCROLL
+    GROUPBOX        "Brightness Outputs",IDC_STATIC,7,7,187,89
+    GROUPBOX        "Analog Inputs",IDC_STATIC,7,103,187,174
+    CONTROL         "Heater On",IDC_CHECK_HEATER,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,284,45,16
+    CONTROL         "",IDC_SPIN_PWM1,"msctls_updown32",UDS_ARROWKEYS,85,22,12,14
+    CONTROL         "",IDC_SPIN_PWM2,"msctls_updown32",UDS_ARROWKEYS,85,39,11,14
+    CONTROL         "",IDC_SPIN_PWM3,"msctls_updown32",UDS_ARROWKEYS,85,57,11,14
+    CONTROL         "",IDC_SPIN_PWM4,"msctls_updown32",UDS_ARROWKEYS,85,74,11,14
+    CONTROL         "",IDC_SPIN_VDC1,"msctls_updown32",UDS_ARROWKEYS,175,22,11,14
+    CONTROL         "",IDC_SPIN_VDC2,"msctls_updown32",UDS_ARROWKEYS,175,39,11,14
+    CONTROL         "",IDC_SPIN_VDC3,"msctls_updown32",UDS_ARROWKEYS,175,57,11,14
+    CONTROL         "",IDC_SPIN_VDC4,"msctls_updown32",UDS_ARROWKEYS,175,74,11,14
+END
+
+IDD_ENH_MAINT_DLG DIALOGEX 0, 0, 532, 410
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Maintenance"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_ANALOGS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,71,196,157
+    GROUPBOX        "Analog Inputs",IDC_STATIC,7,56,214,181
+    CONTROL         "Heater On",IDC_CHECK_HEATER,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,411,69,45,16
+    LTEXT           "COM Port:",IDC_STATIC,17,27,41,10
+    CTEXT           "Static",IDC_STATIC_COM2,55,24,67,14,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "Connect",IDC_CHECK_CONNECT,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,138,22,67,18
+    CONTROL         "",IDC_LIST_BIT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,238,22,145,300
+    GROUPBOX        "BIT",IDC_STATIC,229,7,163,323
+    RTEXT           "Duty:",IDC_STATIC,12,348,53,10
+    RTEXT           "Current:",IDC_STATIC,12,362,53,10
+    RTEXT           "Potentiometer:",IDC_STATIC,12,380,53,10
+    CONTROL         "",IDC_SLIDER_DUTY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,64,347,276,13
+    CONTROL         "",IDC_SLIDER_CURRENT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,64,361,276,13
+    COMBOBOX        IDC_COMBO_POT,68,379,44,151,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Brightness",IDC_STATIC,7,332,386,71
+    GROUPBOX        "Link",IDC_STATIC,7,7,214,45
+    CONTROL         "Day",IDC_CHECK_DAY,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,178,379,54,16
+    EDITTEXT        IDC_EDIT_DUTY,346,346,37,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CURRENT,346,360,37,13,ES_AUTOHSCROLL
+    RTEXT           "ETI:",IDC_STATIC,408,26,19,10
+    CTEXT           "Static",IDC_STATIC_ETI,429,23,81,14,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Static",IDC_STATIC_HEATER_STATUS,459,69,47,14,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "Enable",IDC_CHECK_HTR_ENABLE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,459,88,50,15
+    RTEXT           "STTE:",IDC_STATIC,429,91,24,10
+    GROUPBOX        "Heater",IDC_STATIC,401,53,124,57
+    CTEXT           "",IDC_STATIC_PAT_MCOL1,55,282,19,16,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "",IDC_STATIC_PAT_RGB1,79,282,54,16,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Color #1:",IDC_STATIC,19,286,32,8
+    CTEXT           "",IDC_STATIC_PAT_MCOL2,55,300,19,16,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "",IDC_STATIC_PAT_RGB2,79,300,54,16,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Color #2:",IDC_STATIC,19,304,32,8
+    COMBOBOX        IDC_COMBO_VIDEO_PATTERN,55,263,112,117,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Pattern:",IDC_STATIC,21,265,28,8
+    GROUPBOX        "LCD Pattern",IDC_STATIC,7,243,166,86
+    GROUPBOX        "ETI",IDC_STATIC,401,7,124,43
+    GROUPBOX        "Operative Dimming Curves",IDC_STATIC,409,332,116,71
+    CONTROL         "Oper Brt On",IDC_OPER_BRT_MODE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,444,379,54,16
+    RTEXT           "Brightness:",IDC_STATIC,425,353,39,10
+    COMBOBOX        IDC_COMBO_MNT_OPERBRT,468,351,44,151,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Calibrate Brightness Feedback",IDC_BUT_CALIB_BRT_FEEDBACK,403,132,111,33
+    PUSHBUTTON      "Reboot",IDC_BUT_REBOOT,404,176,111,33
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MM_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 485
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 309
+    END
+
+    IDD_BRT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 449
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_MAINT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 309
+    END
+
+    IDD_ENH_MAINT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 525
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 403
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MM MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open...",                     ID_MENUFILE_OPEN
+        MENUITEM "Save...",                     ID_MENUFILE_SAVE
+        MENUITEM "Import full...",              ID_FILE_IMPORTFULL
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Info"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "DHA 5x5 Test Bench",IDC_STATIC,44,16,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "---",IDC_STATIC_CODE,44,31,119,8
+    LTEXT           "---",IDC_STATIC_INTREV,44,44,119,8
+END
+
+IDD_DHA5X5_STTE_DIALOG DIALOGEX 0, 0, 622, 322
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "M346 DHA5x5 STTE"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Brightness",IDC_STATIC,279,74,170,117,WS_GROUP
+    CONTROL         "Day",IDC_RADIO_DAY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,349,92,29,10
+    CONTROL         "Night",IDC_RADIO_NIGHT,"Button",BS_AUTORADIOBUTTON,349,103,33,10
+    EDITTEXT        IDC_EDIT_BRT,332,126,37,13,ES_RIGHT | ES_AUTOHSCROLL | WS_GROUP
+    RTEXT           "Brightness:",IDC_STATIC,289,128,40,8
+    CONTROL         "Manual",IDC_RADIO_FANMANUAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,168,143,39,10
+    CONTROL         "Auto",IDC_RADIO_FANAUTO,"Button",BS_AUTORADIOBUTTON,168,156,31,10
+    CONTROL         "Fan On/Off",IDC_CHECK_FANONOFF,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,166,172,41,14
+    GROUPBOX        "Fan",IDC_STATIC,137,130,131,90,WS_GROUP
+    RTEXT           "Luminance Sensor:",IDC_STATIC,288,170,62,8
+    CTEXT           "-----",IDC_STATIC_LUMINANCE_SENSOR,353,168,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Backlight Temp.:",IDC_STATIC,294,242,54,8
+    CTEXT           "-----",IDC_STATIC_BACKLIGHT_TEMPERATURE,353,239,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "Connect",IDC_CHECK_STARTSTTE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,142,20,50,15
+    RTEXT           "Lamp Control Status:",IDC_STATIC,281,258,66,8
+    CTEXT           "-----",IDC_STATIC_LAMP_CONTROL_STATUS,353,255,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "Miscellaneous",IDC_STATIC,273,212,179,102,WS_GROUP
+    RTEXT           "Fan Status:",IDC_STATIC,146,198,37,8
+    CTEXT           "-----",IDC_STATIC_FAN_STATUS,190,196,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Heater Status:",IDC_STATIC,301,273,46,8
+    CTEXT           "-----",IDC_STATIC_HEATER_STATUS,353,271,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "SW version:",IDC_STATIC,306,287,40,8
+    CTEXT           "-----",IDC_STATIC_SW_VERSION,353,287,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Luminance Level:",IDC_STATIC,288,154,62,8
+    CTEXT           "-----",IDC_STATIC_LUMINANCE_LEVEL,353,152,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Transmit",IDC_BRT_TX,397,124,41,14
+    PUSHBUTTON      "Transmit",IDC_FAN_TX,218,140,41,14
+    GROUPBOX        "Restart && Test Commands",IDC_STATIC,456,7,158,118,WS_GROUP
+    PUSHBUTTON      "Restart",IDC_RESTART,465,22,83,14
+    PUSHBUTTON      "Read",IDC_READLUMINANCE,397,167,41,14
+    PUSHBUTTON      "Read",IDC_READBACKTEMP,399,236,41,14
+    PUSHBUTTON      "Read",IDC_READLAMPSTATUS,399,252,41,14
+    PUSHBUTTON      "Read",IDC_READBITSTATUS,513,142,41,14
+    PUSHBUTTON      "Read",IDC_READFANSTATUS,218,178,41,14
+    PUSHBUTTON      "Read",IDC_READHEATERSTATUS,399,268,41,14
+    PUSHBUTTON      "Read",IDC_READSWVERSION,399,284,41,14
+    PUSHBUTTON      "Read",IDC_READLUMINANCELEV,397,152,41,14
+    PUSHBUTTON      "Memory",IDC_BUT_MM,277,20,50,15
+    GROUPBOX        "BIT",IDC_STATIC,457,131,157,155
+    CONTROL         "Log ON",IDC_CHECK_LOGON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,394,42,41,10
+    PUSHBUTTON      "Maintenance",IDC_BUT_MAINT,332,20,50,15
+    RTEXT           "Fan Failure:",IDC_STATIC,513,169,38,8
+    CTEXT           "-----",IDC_STATIC_BIT1,557,167,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Video RAM Failure:",IDC_STATIC,489,183,62,8
+    CTEXT           "-----",IDC_STATIC_BIT2,557,182,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Bck.Temp.Sensor Failure:",IDC_STATIC,469,198,82,8
+    CTEXT           "-----",IDC_STATIC_BIT3,557,196,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "28VDC Failure:",IDC_STATIC,502,211,48,8
+    CTEXT           "-----",IDC_STATIC_BIT4,557,210,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Overtemperature:",IDC_STATIC,495,225,56,8
+    CTEXT           "-----",IDC_STATIC_BIT5,557,223,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Flash Failure:",IDC_STATIC,509,239,42,8
+    CTEXT           "-----",IDC_STATIC_BIT6,557,238,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Power Supply Failure:",IDC_STATIC_BIT6_LABEL,481,254,69,8
+    CTEXT           "-----",IDC_STATIC_BIT7,557,252,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Backlight lum. Failure:",IDC_STATIC,481,267,70,8
+    CTEXT           "-----",IDC_STATIC_BIT8,557,266,37,12,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Invalid",IDC_INVALID_COMMAND,553,22,54,14
+    PUSHBUTTON      "Unrecognized",IDC_UNREC_COMMAND,553,55,54,14
+    PUSHBUTTON      "Timeout",IDC_TIMEOUT_COMMAND,553,39,54,14
+    CONTROL         "Auto Read",IDC_CHECK_AUTOREAD,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,510,93,50,21
+    CONTROL         "",IDC_SPIN_BRT,"msctls_updown32",UDS_ARROWKEYS,370,124,11,16
+    RTEXT           "IP Address:",IDC_STATIC,18,24,39,8
+    CTEXT           "Static",IDC_STATIC_IPADD,61,23,71,11,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "System",IDC_STATIC,7,7,435,58
+    PUSHBUTTON      "DEBUG",IDC_BUT_DEBUG,502,293,66,16,NOT WS_VISIBLE
+    CONTROL         "Enable",IDC_CHECK_HTR_ENABLE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,17,87,50,15
+    GROUPBOX        "Heater",IDC_STATIC,7,72,147,37
+    CTEXT           "Static",IDC_STATIC_HTR_STAT1,108,82,33,11,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Static",IDC_STATIC_HTR_STAT2,108,94,33,11,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Status:",IDC_STATIC,75,89,28,8
+    CONTROL         "Reset",IDC_CHECK_DOUT_RESET,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,17,131,50,15
+    CONTROL         "Gamma 1",IDC_CHECK_DOUT_GAMMASEL1,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,17,147,50,15
+    CONTROL         "Gamma 2",IDC_CHECK_DOUT_GAMMASEL2,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,17,163,50,15
+    CONTROL         "Shutdown",IDC_CHECK_DOUT_SHUTDOWN,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,71,132,50,15
+    CONTROL         "Spare 1",IDC_CHECK_DOUT_SPARE1,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,71,147,50,15
+    CONTROL         "Spare 2",IDC_CHECK_DOUT_SPARE2,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,71,163,50,15
+    RTEXT           "BIT Out:",IDC_STATIC,32,187,28,8
+    CTEXT           "Static",IDC_STATIC_DIN_BIT_OUT,65,185,33,11,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "BIT Event:",IDC_STATIC,18,200,43,8
+    CTEXT           "Static",IDC_STATIC_DIN_BIT_EVENT,65,198,33,11,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "Discrete I/O",IDC_STATIC,7,114,124,106
+    CONTROL         "Pattern Generator",IDC_RADIO_VIDEO_PATTERN_GEN,"Button",BS_AUTORADIOBUTTON,23,251,75,10
+    CONTROL         "External Player",IDC_RADIO_VIDEO_EXT_PLAYER,"Button",BS_AUTORADIOBUTTON,23,265,65,10
+    GROUPBOX        "Video",IDC_STATIC,7,229,260,86
+    COMBOBOX        IDC_COMBO_VIDEO_PATTERN,147,251,112,117,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "",IDC_STATIC_PAT_COL1,57,289,19,16,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "",IDC_STATIC_PAT_RGB1,81,289,54,16,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Color #1:",IDC_STATIC,21,293,32,8
+    CTEXT           "",IDC_STATIC_PAT_COL2,179,289,19,16,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "",IDC_STATIC_PAT_RGB2,201,289,54,16,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Color #2:",IDC_STATIC,143,293,32,8
+    RTEXT           "Pattern:",IDC_STATIC,115,253,28,8
+    PUSHBUTTON      "STTE Config",IDC_BUT_STTE_CONFIG,205,20,50,15
+    CTEXT           "Static",IDC_STATIC_AD590_HEX,191,88,38,11,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Hex:",IDC_STATIC,163,89,22,8
+    CTEXT           "Static",IDC_STATIC_AD590_TEMP,191,100,38,11,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "°C:",IDC_STATIC,169,101,15,8
+    GROUPBOX        "AD590",IDC_STATIC,161,72,77,48
+    RTEXT           "Log Path:",IDC_STATIC,17,43,39,8
+    LTEXT           "Static",IDC_STATIC_LOG_PATH,61,42,325,11,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN | SS_PATHELLIPSIS
+    PUSHBUTTON      "Loader",IDC_BUT_LOADER,388,20,50,15
+    PUSHBUTTON      "Noop",IDC_NOOP_COMMAND,553,71,54,14
+    PUSHBUTTON      "Day Mode Warm Start",IDC_DAY_WARM_START_COMMAND,465,55,83,14
+    PUSHBUTTON      "Night Mode Warm Start",IDC_NIGHT_WARM_START_COMMAND,465,71,83,14
+END
+
+IDD_EDIT_IP_DLG DIALOGEX 0, 0, 206, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit IP Address"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,93,63,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,149,63,50,14
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,21,19,164,13
+END
+
+IDD_STTE_CONFIG_DLG DIALOGEX 0, 0, 200, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "STTE Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "---",IDC_STATIC_COM,51,14,50,14,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "COM Port:",IDC_STATIC,13,16,34,8
+    PUSHBUTTON      "Set",IDC_BUT_SET_IP,136,42,46,15
+    CONTROL         "",IDC_IPADD_STTE,"SysIPAddress32",WS_TABSTOP,41,43,88,13
+    LTEXT           "IP:",IDC_STATIC,25,45,10,8
+END
+
+IDD_UNIT_SEL_DLG DIALOGEX 0, 0, 233, 124
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select DHA 5x5"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "UNIT 01",IDC_BUT_UNIT1,31,26,167,32
+    PUSHBUTTON      "UNIT 02",IDC_BUT_UNIT2,31,62,167,32
+END
+
+IDD_BRT_BUILDER_DLG DIALOGEX 0, 0, 520, 456
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LCD Brightness Builder"
+MENU IDR_MENU_BRT_BUILDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "0x00000003",IDC_TRACE_LCDPWM,"FMT_TraceCtrl",WS_GROUP | WS_TABSTOP,32,95,301,146,WS_EX_TRANSPARENT
+    GROUPBOX        "PWM",IDC_STATIC,22,83,379,162
+    CONTROL         "0x00000003",IDC_TRACE_LCDVOLT,"FMT_TraceCtrl",WS_GROUP | WS_TABSTOP,32,257,301,146,WS_EX_TRANSPARENT
+    GROUPBOX        "Current",IDC_STATIC,22,247,455,160
+    PUSHBUTTON      "Generate",IDC_BUT_GENERATE_LCDPWM,340,95,54,16
+    PUSHBUTTON      "Import",IDC_BUT_IMPORT_LCDPWM,340,112,54,16
+    PUSHBUTTON      "Export",IDC_BUT_EXPORT_LCDPWM,340,129,54,16
+    CONTROL         "",IDC_SLIDER_LCDBRT_CURSOR,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,43,420,229,13
+    CTEXT           "Static",IDC_STATIC_LCDPWM_STEP,277,419,38,14,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Static",IDC_STATIC_LCDPWM_DUTY,321,419,38,14,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Static",IDC_STATIC_LCDCURR,363,419,38,14,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_LIST_LCDBRT_NODES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,344,258,114,102
+    EDITTEXT        IDC_EDIT_LCDBRT_NODE,365,364,33,12,ES_AUTOHSCROLL
+    RTEXT           "Node:",IDC_STATIC,343,366,20,8
+    RTEXT           "Value:",IDC_STATIC,402,366,21,8
+    EDITTEXT        IDC_EDIT_LCDBRT_VALUE,426,364,33,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Remove Node",IDC_BUT_REMOVE_LCDBRT_NODE,411,380,50,15
+    PUSHBUTTON      "Insert Node",IDC_BUT_INSERT_LCDBRT_NODE,344,380,50,15
+    CONTROL         "",IDC_TAB_BRT_DN,"SysTabControl32",0x0,7,67,496,381
+    LTEXT           "File:",IDC_STATIC,23,14,14,8
+    LTEXT           "Static",IDC_STATIC_FILE_PATH,40,12,454,13,SS_CENTERIMAGE | SS_SUNKEN | SS_PATHELLIPSIS
+    LTEXT           "Pot.:",IDC_STATIC,415,100,17,8
+    COMBOBOX        IDC_COMBO_POT,436,98,47,220,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Code:",IDC_STATIC,25,36,20,8
+    RTEXT           "Name:",IDC_STATIC,24,49,22,8
+    RTEXT           "Date:",IDC_STATIC,253,36,19,8
+    RTEXT           "Author:",IDC_STATIC,246,49,26,8
+    EDITTEXT        IDC_EDIT_CODE,49,35,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NAME,49,48,171,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DATE,273,35,49,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AUTHOR,273,48,79,12,ES_AUTOHSCROLL
+END
+
+IDD_GENERATE_BRT_DLG DIALOGEX 0, 0, 141, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Brightness Curve Generation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MAX_DUTY,70,21,44,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,16,44,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,44,50,14
+    RTEXT           "Max.Duty:",IDC_STATIC,16,23,50,8
+END
+
+IDD_LOADER_DLG DIALOGEX 0, 0, 384, 291
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Memory Loader"
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_PROG_LOADER,"msctls_progress32",WS_BORDER,7,254,370,11
+    PUSHBUTTON      "Program",IDC_BUT_CFG_PROGRAM,197,69,69,15
+    LTEXT           "Static",IDC_STATIC_TARGET,7,270,370,14,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Verify",IDC_BUT_CFG_VERIFY,197,105,69,15
+    PUSHBUTTON      "Erase",IDC_BUT_CFG_ERASE,197,87,69,15
+    PUSHBUTTON      "Read Info from file",IDC_BUT_CFG_READINFO_FROMFILE,268,87,69,15
+    PUSHBUTTON      "Stop",IDC_BUT_STOP,150,220,90,25
+    GROUPBOX        "Configuration Memory",IDC_STATIC,7,49,338,84
+    PUSHBUTTON      "Read Info from target",IDC_BUT_CFG_READINFO_FROMMEM,268,105,69,15
+    PUSHBUTTON      "Read",IDC_BUT_CFG_READ,268,69,69,15
+    CONTROL         "",IDC_LIST_CFG_INFO,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,66,173,59
+    PUSHBUTTON      "Erase",IDC_BUT_BITLOG_ERASE,21,157,69,15
+    PUSHBUTTON      "Read",IDC_BUT_BITLOG_READ,95,157,69,15
+    GROUPBOX        "Bitlog Memory",IDC_STATIC,7,139,338,70
+    LTEXT           "COM Port:",IDC_STATIC,13,17,31,8
+    CTEXT           "Static",IDC_STATIC_COM,48,14,50,14,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_BRTFBK_CALIB_DLG DIALOGEX 0, 0, 441, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Brightness Feedback Calibration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROG_CALIB,"msctls_progress32",WS_BORDER,18,20,406,15
+    LTEXT           "Static",IDC_STATIC_STATUS,20,39,404,13,SS_CENTERIMAGE
+    PUSHBUTTON      "Abort",IDCANCEL,178,64,88,36
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_DHA5X5_STTE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 614
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 315
+    END
+
+    IDD_EDIT_IP_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_STTE_CONFIG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_UNIT_SEL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_BRT_BUILDER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 513
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 448
+    END
+
+    IDD_GENERATE_BRT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_LOADER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 377
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 284
+    END
+
+    IDD_BRTFBK_CALIB_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 434
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_BRT_BUILDER MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open",                        ID_FILE_OPEN
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM "Save as",                     ID_FILE_SAVEAS
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 16, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\dha5x5_STTE.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.ita\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\dha5x5_STTE.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041004b0"
+        BEGIN
+            VALUE "CompanyName", "Leonardo"
+            VALUE "FileDescription", "M346 DHA5x5 STTE"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "M346 DHA5x5 STTE"
+            VALUE "LegalCopyright", "Leonardo"
+            VALUE "OriginalFilename", "dha5x5_STTE.EXE"
+            VALUE "ProductName", "dha5x5_STTE Applicazione"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x410, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "Info..."
+END
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COM_DLG DIALOGEX 0, 0, 333, 203
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "COM Port Selection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,142,173,48,19
+    DEFPUSHBUTTON   "OK",IDOK,76,173,48,19
+    CONTROL         "",IDC_LIST_COMS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,319,150
+    PUSHBUTTON      "Rescan",IDC_BUT_RESCAN,208,173,48,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_COM_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE 16, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\dha5x5_STTE.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.ita\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35425.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dha5x5_STTE", "dha5x5_STTE.vcxproj", "{CEC365AB-CD4F-4D16-B2ED-2A84D6CC41ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEC365AB-CD4F-4D16-B2ED-2A84D6CC41ED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CEC365AB-CD4F-4D16-B2ED-2A84D6CC41ED}.Debug|Win32.Build.0 = Debug|Win32
+		{CEC365AB-CD4F-4D16-B2ED-2A84D6CC41ED}.Release|Win32.ActiveCfg = Release|Win32
+		{CEC365AB-CD4F-4D16-B2ED-2A84D6CC41ED}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2606591E-CB11-4676-83CC-1A4BE5C09622}
+	EndGlobalSection
+EndGlobal
