@@ -83,7 +83,6 @@ BOOL CDha5x5_STTEApp::InitInstance()
 
 	LFMT_Comm_LoadLicense(sLicFile, sAppFile);
 
-
 	#ifdef STTE_COMPILE_02
 	CDha5x5_STTEDlg dlg;
 	dlg.m_dwUnitRev = 2;

@@ -19,6 +19,8 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
+CRemotePanel g_remotePnl;
+
 /////////////////////////////////////////////////////////////////////////////
 // CAboutDlg dialog used for App About
 
@@ -237,6 +239,7 @@ BOOL CDha5x5_STTEDlg::OnInitDialog()
 
 	// Subclassing
 	m_ssIpAdd.SubclassDlgItem(IDC_STATIC_IPADD, this);
+
 	m_ssDinBitOut.SubclassDlgItem(IDC_STATIC_DIN_BIT_OUT, this);
 	m_ssDinBitEvent.SubclassDlgItem(IDC_STATIC_DIN_BIT_EVENT, this);
 	m_pssHtrStat[0].SubclassDlgItem(IDC_STATIC_HTR_STAT1, this);
@@ -295,9 +298,23 @@ BOOL CDha5x5_STTEDlg::OnInitDialog()
 
 	RefreshPatColor(0, m_pDev->m_pPatCol[0]);
 	RefreshPatColor(1, m_pDev->m_pPatCol[1]);
+	
+
+	g_remotePnl.SetParams(this);
+	g_remotePnl.Create(IDD_CRemotePanel, this);
+	// g_remotePnl.SetParams(this);
+	// g_remotePnl.SubclassDlgItem(IDD_CRemotePanel, this);
+	g_remotePnl.ShowWindow(1);
+
+
+	#ifdef HIDE_MAIN_SW
+		this->MoveWindow(2000, 2000, 2000, 2000);
+	#endif
 
 	m_ssLogFilePath.SetWindowText(m_pDev->m_sLogFilePath.GetStringC());
 	m_ssLogFilePath.SetBkColor(STTE_COLOR_YELLOW);
+
+
 
 	SetTimer(DHA55_REFRESHTIMER_ID, DHA55_REFRESHTIMER_TIMEOUT, NULL); //Creo il timer generale
 
@@ -2634,6 +2651,7 @@ void CDha5x5_STTEDlg::OnBnClickedNightWarmStartCommand()
 
 	EnableControls(TRUE);
 }
+
 
 BOOL CAboutDlg::OnInitDialog()
 {

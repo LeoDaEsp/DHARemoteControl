@@ -41,6 +41,7 @@ void CSelectUnitDlg::OnBnClickedButUnit1()
 
 	d.m_dwUnitRev = 1;
 	d.DoModal();
+
 }
 
 void CSelectUnitDlg::OnBnClickedButUnit2()

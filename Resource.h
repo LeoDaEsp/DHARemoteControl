@@ -17,6 +17,7 @@
 #define IDD_UNIT_SEL_DLG                134
 #define IDR_MENU_BRT_BUILDER            135
 #define IDD_BRTFBK_CALIB_DLG            136
+#define IDD_CRemotePanel                137
 #define IDD_COM_DLG                     139
 #define IDD_GENERATE_BRT_DLG            149
 #define IDD_LOADER_DLG                  150
@@ -230,6 +231,8 @@
 #define IDC_BUT_INSERT_LCDBRT_NODE      1439
 #define IDC_BUT_REMOVE_LCDBRT_NODE      1440
 #define IDC_STATIC_FILE_PATH            1441
+#define IDC_LIST_RMT_CMD                1460
+#define IDC_BUTTON_TEST                 1461
 #define IDC_EDIT_GAMMA                  3006
 #define IDC_EDIT_MIN_DUTY               3007
 #define IDC_EDIT_MAX_DUTY               3008

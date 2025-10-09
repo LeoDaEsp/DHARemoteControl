@@ -152,8 +152,11 @@
     <ClCompile Include="BrtDlg.cpp" />
     <ClCompile Include="BrtFbkCalibDlg.cpp" />
     <ClCompile Include="BtlFile.cpp" />
+    <ClCompile Include="ClientTCPMng.cpp" />
     <ClCompile Include="CnfFile.cpp" />
     <ClCompile Include="ComDlg.cpp" />
+    <ClCompile Include="CRemotePanel.cpp" />
+    <ClCompile Include="CRemoteProcess.cpp" />
     <ClCompile Include="dha5x5_STTE.cpp" />
     <ClCompile Include="dha5x5_STTEDlg.cpp" />
     <ClCompile Include="DhaStteDevice.cpp" />
@@ -163,6 +166,8 @@
     <ClCompile Include="FMT_TraceCtrl.cpp" />
     <ClCompile Include="FMT_Wnd.cpp" />
     <ClCompile Include="GenerateBrtDlg.cpp" />
+    <ClCompile Include="INI.cpp" />
+    <ClCompile Include="IniFileMng.cpp" />
     <ClCompile Include="LoaderDlg.cpp" />
     <ClCompile Include="MaintDlg.cpp" />
     <ClCompile Include="MaintMpp.cpp" />
@@ -176,6 +181,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="StteConfigDlg.cpp" />
+    <ClCompile Include="Thrd.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="dha5x5_STTE.rc" />
@@ -185,17 +191,24 @@
     <ClInclude Include="BrtDlg.h" />
     <ClInclude Include="BrtFbkCalibDlg.h" />
     <ClInclude Include="BtlFile.h" />
+    <ClInclude Include="ClientTCPMng.h" />
     <ClInclude Include="CnfFile.h" />
     <ClInclude Include="ComDlg.h" />
+    <ClInclude Include="CRemotePanel.h" />
+    <ClInclude Include="CRemoteProcess.h" />
     <ClInclude Include="dha5x5_STTE.h" />
     <ClInclude Include="dha5x5_STTEDlg.h" />
     <ClInclude Include="DhaStteDevice.h" />
     <ClInclude Include="EditIpDlg.h" />
     <ClInclude Include="EnhMaintDlg.h" />
+    <ClInclude Include="EthernetGlobals.h" />
     <ClInclude Include="FMT_DIB.h" />
     <ClInclude Include="FMT_TraceCtrl.h" />
     <ClInclude Include="FMT_Wnd.h" />
     <ClInclude Include="GenerateBrtDlg.h" />
+    <ClInclude Include="INI.h" />
+    <ClInclude Include="IniFileMng.h" />
+    <ClInclude Include="LibGlobals.h" />
     <ClInclude Include="LoaderDlg.h" />
     <ClInclude Include="MaintDlg.h" />
     <ClInclude Include="MaintMpp.h" />
@@ -207,6 +220,7 @@
     <ClInclude Include="StatusListCtrl.h" />
     <ClInclude Include="StdAfx.h" />
     <ClInclude Include="StteConfigDlg.h" />
+    <ClInclude Include="Thrd.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\dha5x5_STTE.ico" />

@@ -11,6 +11,7 @@
 
 class CLoaderDlg : public CDialog
 {
+	friend class CRemotePanel;
 	DECLARE_DYNAMIC(CLoaderDlg)
 
 	// =====================================================================================

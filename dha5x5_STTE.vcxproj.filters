@@ -26,6 +26,24 @@
     <ClCompile Include="StatusListCtrl.cpp" />
     <ClCompile Include="StdAfx.cpp" />
     <ClCompile Include="StteConfigDlg.cpp" />
+    <ClCompile Include="CRemotePanel.cpp">
+      <Filter>LIBClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientTCPMng.cpp">
+      <Filter>LIBClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="CRemoteProcess.cpp">
+      <Filter>LIBClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="INI.cpp">
+      <Filter>LIBClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="IniFileMng.cpp">
+      <Filter>LIBClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Thrd.cpp">
+      <Filter>LIBClasses</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BrtBuilderDlg.h" />
@@ -54,6 +72,30 @@
     <ClInclude Include="StatusListCtrl.h" />
     <ClInclude Include="StdAfx.h" />
     <ClInclude Include="StteConfigDlg.h" />
+    <ClInclude Include="CRemotePanel.h">
+      <Filter>LIBClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientTCPMng.h">
+      <Filter>LIBClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="CRemoteProcess.h">
+      <Filter>LIBClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="INI.h">
+      <Filter>LIBClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="IniFileMng.h">
+      <Filter>LIBClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="LibGlobals.h">
+      <Filter>LIBClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Thrd.h">
+      <Filter>LIBClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="EthernetGlobals.h">
+      <Filter>LIBClasses</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="dha5x5_STTE.rc" />
@@ -69,7 +111,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="RemotePanel">
+    <Filter Include="LIBClasses">
       <UniqueIdentifier>{cfcac820-4e06-4526-a427-836a5aa16bcc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>

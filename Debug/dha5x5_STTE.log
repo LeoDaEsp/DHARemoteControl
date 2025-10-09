@@ -2,6 +2,7 @@
   StdAfx.cpp
   _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
   cl : warning della riga di comando D9035 : l'opzione 'Gm' è deprecata e verrà rimossa in una futura versione
+  Thrd.cpp
   StteConfigDlg.cpp
   StatusListCtrl.cpp
   SmartStatic.cpp
@@ -15,6 +16,8 @@ C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\MaintDlg.cp
 C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\MaintDlg.cpp(229,28): warning C4244: 'argomento': conversione da 'DWORD' a 'BYTE'. Possibile perdita di dati.
   LoaderDlg.cpp
 C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\LoaderDlg.cpp(1397,9): warning C4101: 'dwRet': variabile locale senza riferimenti
+  IniFileMng.cpp
+  INI.cpp
   GenerateBrtDlg.cpp
   FMT_Wnd.cpp
   FMT_TraceCtrl.cpp
@@ -25,12 +28,31 @@ C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\LoaderDlg.c
 C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\DhaStteDevice.cpp(1667,26): warning C4305: '=': troncamento da 'int' a 'BYTE'
 C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\DhaStteDevice.cpp(1667,23): warning C4309: '=': troncamento di valore costante
   dha5x5_STTEDlg.cpp
-  dha5x5_STTE.cpp
-  ComDlg.cpp
-  CnfFile.cpp
   Generazione del codice in corso...
 C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\DhaStteDevice.cpp(1768): warning C4715: 'CDhaStteDevice::EnableLog': non tutti i percorsi di controllo restituiscono un valore
   Compilazione in corso...
+  dha5x5_STTE.cpp
+  CRemoteProcess.cpp
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemoteProcess.cpp(25,21): warning C4305: '=': troncamento da '<unnamed-enum-TCP_PORT>' a 'WORD'
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemoteProcess.cpp(25,13): warning C4309: '=': troncamento di valore costante
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemoteProcess.cpp(67,20): warning C4018: '<': errata corrispondenza tra signed e unsigned
+  CRemotePanel.cpp
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(599,19): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(651,19): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(701,19): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(751,19): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(1302,9): warning C4244: 'return': conversione da 'double' a 'int'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(1315,47): warning C4244: '=': conversione da 'double' a 'WORD'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(1336,64): warning C4244: '=': conversione da 'double' a 'int'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(1351,47): warning C4244: '=': conversione da 'double' a 'WORD'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(1373,9): warning C4244: 'return': conversione da 'double' a 'int'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(1386,47): warning C4244: '=': conversione da 'double' a 'WORD'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(1410,9): warning C4244: 'return': conversione da 'double' a 'int'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(1422,47): warning C4244: '=': conversione da 'double' a 'WORD'. Possibile perdita di dati.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(2088,25): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ComDlg.cpp
+  CnfFile.cpp
+  ClientTCPMng.cpp
   BtlFile.cpp
   BrtFbkCalibDlg.cpp
 C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\BrtFbkCalibDlg.cpp(282,75): warning C4244: '=': conversione da 't_FMT_Uint64' a 'DWORD'. Possibile perdita di dati.

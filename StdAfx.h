@@ -3,6 +3,7 @@
 //      are changed infrequently
 //
 
+
 #if !defined(AFX_STDAFX_H__B65FFCFF_3C0F_4410_A861_7847149858D8__INCLUDED_)
 #define AFX_STDAFX_H__B65FFCFF_3C0F_4410_A861_7847149858D8__INCLUDED_
 
@@ -34,7 +35,7 @@
 #define STTE_INTERV			"A"
 
 //#define DHA55_COMPILE_NOHDW
-//#define STTE_COMPILE_02
+#define STTE_COMPILE_02
 
 
 // ----- Control Macroes ------------------------------
@@ -135,3 +136,7 @@ CString			GetEtiString(DWORD dwEti);
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
 #endif // !defined(AFX_STDAFX_H__B65FFCFF_3C0F_4410_A861_7847149858D8__INCLUDED_)
+
+#include "CRemotePanel.h"
+extern CRemotePanel g_remotePnl;
+#undef HIDE_MAIN_SW

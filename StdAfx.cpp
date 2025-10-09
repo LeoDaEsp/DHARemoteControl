@@ -10,14 +10,19 @@
 
 int STTE_Message(const CString& sText,int iParam, CWnd* pParent)
 {
-	if (pParent == NULL)
-	{
-		return ::MessageBox(0, sText, "DHA5x5 STTE", iParam);
-	}
-	else
-	{
-		return ::MessageBox(pParent->m_hWnd, sText, "DHA5x5 STTE", iParam);
-	}
+	// Modifica Dario
+	CString a = sText;
+	g_remotePnl.ProcessUserMsg(a, iParam);
+	return 0;
+	// if (pParent == NULL)
+	// {
+	// 	return ::MessageBox(0, sText, "DHA5x5 STTE", iParam);
+	// }
+	// else
+	// {
+	// 	return ::MessageBox(pParent->m_hWnd, sText, "DHA5x5 STTE", iParam);
+	// }
+
 }
 
 
