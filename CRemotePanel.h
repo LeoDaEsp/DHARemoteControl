@@ -87,6 +87,7 @@ public:
 		CMD__LCD_PATTERN,
 		CMD__LCD_PATTERN_COLOR_1,
 		CMD__LCD_PATTERN_COLOR_2,
+		CMD__REBOOT,
 
 
 		/*
@@ -197,6 +198,7 @@ private:
 	bool _cmd_CMD__BRIG_CURRENT(int TargetCurrent);
 	bool _cmd_CMD__BRIG_POTENTIOMETER(int TargetPot);
 	bool _cmd_CMD__BRIG_DAY(bool TargetDay);
+	bool _cmd_CMD__REBOOT();
 
 	bool _cmd_CMD__CONNECT_COM(bool TargetConnect);
 	bool _cmd_CMD__LCD_PATTERN(CStringA TargetPattern);

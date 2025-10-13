@@ -35,6 +35,7 @@ static CStringA s_szRemCmds[CRemotePanel::NUM_OF__CMD] =
 	"LCD_PATTERN",					//_cmd_CMD__CMD__LCD_PATTERN
 	"LCD_PATTERN_COLOR_1", 			//_cmd_CMD__CMD__LCD_PATTERN_COLOR_1
 	"LCD_PATTERN_COLOR_2",			//_cmd_CMD__LCD_PATTERN_COLOR_2
+	"REBOOT",						//_cmd_CMD__REBOOT
 
 
 
@@ -350,6 +351,33 @@ void CRemotePanel::OnTimer(UINT_PTR nIDEvent)
 
 
 				if (_cmd_CMD__LCD_PATTERN_COLOR_2(params))
+				{
+
+					// m_tmrState = TMR_STATE_WFOR_FINISH;
+					// m_tmrState = TMR_STATE_IDLE;
+
+					_replyOk();
+					m_tmrState = TMR_STATE_IDLE;
+
+					break;
+				}
+			}
+			_replyFail();
+			m_tmrState = TMR_STATE_IDLE;
+		}
+
+
+		if (m_lastCmd == CMD__REBOOT)
+		{
+			CStringA params = m_szLastCmdParams;
+			params.Replace(CStringA(s_SeparatorId), "");
+			params.Replace(s_szRemCmds[CMD__REBOOT], "");
+			// if (params != "")
+			{
+				m_LastUserMsg = _T("");
+
+
+				if (_cmd_CMD__REBOOT())
 				{
 
 					// m_tmrState = TMR_STATE_WFOR_FINISH;
@@ -941,67 +969,67 @@ void CRemotePanel::OnBtnTest()
 	/*
 		FUNZIONI CALIBRAZIONE FINESTRA LOADER + BUILDER
 	*/
-	switch (sw)
-	{
-	case 1:
-	
-		_cmd_CMD__SYS_CONNECT(true);
-		sw++;
-		break;
-	
-	case 2:
-		_cmd_CMD__CONNECT_COM(TRUE);
-		sw++;
-		break;
-	
-	case 3:
-		_cmd_CMD__CONNECT_COM(false);
-		sw++;
-		break;
-	
-	
-	case 4:
-		_cmd_CMD__LDR_READ("123456789BBB");
-		sw++;
-		break;
-	
-	case 5:
-		_cmd_CMD__BUILDER_OPEN("123456789BBB");
-		sw++;
-		break;
-	
-	case 6:
-		minNvg = _cmd_CMD__BUILDER_GET_MIN_DUTY_NVG();
-		sw++;
-		break;
-	
-	case 7:
-		_cmd_CMD__BUILDER_SET_MIN_DUTY_NVG("69");
-		sw++;
-		break;
-	
-	case 8:
-		_cmd_CMD__BUILDER_INFO_CODE("987654321");
-		sw++;
-		break;
-	
-	case 9:
-		_cmd_CMD__BUILDER_SAVE("new\\123456789BBB");
-		sw++;
-		break;
-		
-	
-	case 10:
-		_cmd_CMD__SYS_CONNECT(false);
-		sw++;
-		break;
-	
-	case 11:
-		_cmd_CMD__FREE_RSC();
-		sw++;
-		break;
-	
-	}
+	// switch (sw)
+	// {
+	// case 1:
+	// 
+	// 	_cmd_CMD__SYS_CONNECT(true);
+	// 	sw++;
+	// 	break;
+	// 
+	// case 2:
+	// 	_cmd_CMD__CONNECT_COM(TRUE);
+	// 	sw++;
+	// 	break;
+	// 
+	// case 3:
+	// 	_cmd_CMD__CONNECT_COM(false);
+	// 	sw++;
+	// 	break;
+	// 
+	// 
+	// case 4:
+	// 	_cmd_CMD__LDR_READ("123456789BBB");
+	// 	sw++;
+	// 	break;
+	// 
+	// case 5:
+	// 	_cmd_CMD__BUILDER_OPEN("123456789BBB");
+	// 	sw++;
+	// 	break;
+	// 
+	// case 6:
+	// 	minNvg = _cmd_CMD__BUILDER_GET_MIN_DUTY_NVG();
+	// 	sw++;
+	// 	break;
+	// 
+	// case 7:
+	// 	_cmd_CMD__BUILDER_SET_MIN_DUTY_NVG("69");
+	// 	sw++;
+	// 	break;
+	// 
+	// case 8:
+	// 	_cmd_CMD__BUILDER_INFO_CODE("987654321");
+	// 	sw++;
+	// 	break;
+	// 
+	// case 9:
+	// 	_cmd_CMD__BUILDER_SAVE("new\\123456789BBB");
+	// 	sw++;
+	// 	break;
+	// 	
+	// 
+	// case 10:
+	// 	_cmd_CMD__SYS_CONNECT(false);
+	// 	sw++;
+	// 	break;
+	// 
+	// case 11:
+	// 	_cmd_CMD__FREE_RSC();
+	// 	sw++;
+	// 	break;
+	// 
+	// }
 
 	/*
 	FUNZIONI CALIBRAZIONE FINESTRA LOADER WRITE
@@ -1052,66 +1080,73 @@ void CRemotePanel::OnBtnTest()
 	// /*
 	// 	FUNZIONI CALIBRAZIONE FINESTRA DI MAINTENANCE
 	// */	
-	// switch (sw)
-	// {
-	// case 1:
-	// 
-	// 	_cmd_CMD__SYS_CONNECT(true);
-	// 	sw++;
-	// 	break;
-	// 
-	// case 2:
-	// 	_cmd_CMD__CONNECT_COM(TRUE);
-	// 	sw++;
-	// 	break;
-	// 
-	// case 3:
-	// 	_cmd_CMD__IDC_OPER_BRT_MODE(true);
-	// 	sw++;
-	// 	break;
-	// 
-	// case 4:
-	// 	_cmd_CMD__IDC_OPER_BRT_MODE(false);
-	// 	sw++;
-	// 	break;
-	// 
-	// case 5:
-	// 	_cmd_CMD__OPR_CRV_BRIGHTNESS_SET(0);
-	// 	sw++;
-	// 	break;
-	// 
-	// case 6:
-	// 	_cmd_CMD__OPR_CRV_BRIGHTNESS_SET(254);
-	// 	sw++;
-	// 	break;
-	// 
-	// case 7:
-	// 	_cmd_CMD__OPR_CRV_BRIGHTNESS_GET();
-	// 	sw++;
-	// 	break;
-	// 
-	// case 8:
-	// 
-	// 	_cmd_CMD__BRIG_DAY(TRUE);
-	// 	sw++;
-	// 	break;
-	// 
-	// case 9:
-	// 	_cmd_CMD__CONNECT_COM(false);
-	// 	sw++;
-	// 	break;
-	// 
-	// case 10:
-	// 	_cmd_CMD__SYS_CONNECT(false);
-	// 	sw++;
-	// 	break;
-	// 
-	// case 11:
-	// 	_cmd_CMD__prova_free_resources();
-	// 	sw++;
-	// 	break;
-	// 
-	// }
+	switch (sw)
+	{
+	case 1:
+	
+		_cmd_CMD__SYS_CONNECT(true);
+		sw++;
+		break;
+	
+	case 2:
+		_cmd_CMD__CONNECT_COM(TRUE);
+		sw++;
+		break;
+	
+	case 3:
+		_cmd_CMD__IDC_OPER_BRT_MODE(true);
+		sw++;
+		break;
+	
+	case 4:
+		_cmd_CMD__IDC_OPER_BRT_MODE(false);
+		sw++;
+		break;
+	
+	case 5:
+		_cmd_CMD__OPR_CRV_BRIGHTNESS_SET(0);
+		sw++;
+		break;
+	
+	case 6:
+		_cmd_CMD__OPR_CRV_BRIGHTNESS_SET(254);
+		sw++;
+		break;
+	
+	case 7:
+		_cmd_CMD__OPR_CRV_BRIGHTNESS_GET();
+		sw++;
+		break;
+	
+	case 8:
+	
+		_cmd_CMD__BRIG_DAY(TRUE);
+		sw++;
+		break;
+
+	case 9:
+
+		_cmd_CMD__REBOOT();
+		sw++;
+		break;
+
+	
+	case 10:
+		_cmd_CMD__CONNECT_COM(false);
+		sw++;
+		break;
+	
+	case 11:
+		_cmd_CMD__SYS_CONNECT(false);
+		sw++;
+		break;
+	
+	case 12:
+		_cmd_CMD__FREE_RSC();
+		sw++;
+		break;
+	
+	}
 
 	/*
 	FUNZIONI GENARALI
@@ -1753,6 +1788,33 @@ bool CRemotePanel::_cmd_CMD__BRIG_POTENTIOMETER(int TargetPot){
 	p->SetCurSel((int)TargetPot);
 
 	m_pMaint->OnCbnSelendokComboPot();
+
+	return true;
+
+}
+
+bool CRemotePanel::_cmd_CMD__REBOOT() {
+
+	M_GETLISTBOX(IDC_LIST_RMT_CMD)->AddString(_T("Reboot"));
+
+	CRemotePanel::_CreateEnhDlg(TRUE, TRUE);
+
+	CButton* p = ((CButton*)(m_pMaint)->GetDlgItem(IDC_CHECK_CONNECT));
+	
+	m_pMaint->OnBnClickedCheckDay();
+
+	m_pMaint->m_bReboot = FALSE;
+
+	m_pMaint->EnableControls(FALSE);
+
+	m_pMaint->KillTimer(STTE_MAINT_TIMER_ID);
+
+	m_pMaint->m_pDev->DisconnectMaintenance();
+
+	m_pMaint->m_pDev->m_btMaintLinkStatus = CDhaStteDevice::e_LinkStatus_Off;
+	
+	p->SetCheck(FALSE);
+	
 
 	return true;
 
