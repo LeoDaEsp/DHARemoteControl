@@ -1593,7 +1593,15 @@ bool CRemotePanel::_cmd_CMD__FREE_RSC() {
 	// DestroyWindow();
 	// (DHA)->OnCancel();
 	// (DHA)->DestroyWindow();
-	(DHA)->m_pDev->Disconnect();
+	// (DHA)->m_pDev->Disconnect();
+
+
+
+	M_GETLISTBOX(IDC_LIST_RMT_CMD)->AddString(_T("Close resource\n"));
+	CButton* p = (CButton*)(DHA)->GetDlgItem(IDC_CHECK_STARTSTTE);
+	p->SetCheck(0);
+	(DHA)->OnCheckStartstte();
+	(DHA)->OnCancel();
 	return true;
 
 }

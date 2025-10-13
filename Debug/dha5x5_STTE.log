@@ -49,7 +49,7 @@ C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePane
 C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(1421,47): warning C4244: '=': conversione da 'double' a 'WORD'. Possibile perdita di dati.
 C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(1445,9): warning C4244: 'return': conversione da 'double' a 'int'. Possibile perdita di dati.
 C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(1457,47): warning C4244: '=': conversione da 'double' a 'WORD'. Possibile perdita di dati.
-C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(2150,25): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ING_TEST\Desktop\Dha5x5_STTE_r856_mod\Dha5x5_STTE_Srcs_r856\CRemotePanel.cpp(2158,25): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   ComDlg.cpp
   CnfFile.cpp
   ClientTCPMng.cpp
