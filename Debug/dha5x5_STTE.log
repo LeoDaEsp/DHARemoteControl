@@ -1,4 +1,5 @@
-﻿  cl : warning della riga di comando D9035 : l'opzione 'Gm' è deprecata e verrà rimossa in una futura versione
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets(77,5): warning : Il processo non può accedere al file 'c:\users\ing_test\desktop\dha5x5_stte_r856_mod\dha5x5_stte_srcs_r856\debug\stdafx.sbr' perché è in uso da un altro processo.
+  cl : warning della riga di comando D9035 : l'opzione 'Gm' è deprecata e verrà rimossa in una futura versione
   StdAfx.cpp
   _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
   cl : warning della riga di comando D9035 : l'opzione 'Gm' è deprecata e verrà rimossa in una futura versione
